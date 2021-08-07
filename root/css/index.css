@@ -1,0 +1,249 @@
+div.mnWrap main {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+div.mnWrap main article:first-child {
+  width: 80%;
+  direction: rtl;
+}
+div.mnWrap main article .image {
+  height: 960px;
+  background-color: #999;
+  width: calc((100vw - 1200px) / 2 + 100%);
+  min-width: 100%;
+}
+div.mnWrap main article:last-child {
+  width: 720px;
+  position: absolute;
+  right: 0;
+  top: 80px;
+}
+div.mnWrap main article .ovgrid {
+  height: 800px;
+  background-color: #f90;
+  width: calc((100vw - 1200px) / 2 + 100%);
+  min-width: 100%;
+  border-radius: 20px 0 0 20px;
+}
+div.mnWrap main article .texts {
+  position: absolute;
+  left: 120px;
+  top: 120px;
+}
+div.mnWrap main article .texts menu {
+  display: flex;
+}
+div.mnWrap main article .texts menu li {
+  margin-right: 20px;
+}
+
+div.about header {
+  display: flex;
+  justify-content: space-between;
+}
+div.about header .left {
+  width: calc(50% - 20px);
+  text-align: right;
+}
+div.about header .right {
+  width: calc(50% - 20px);
+}
+div.about header .right hr {
+  margin-top: 20px;
+}
+div.about header .right h3 {
+  font-size: 18px;
+}
+div.about header .right h3 i {
+  font-weight: 900;
+  font-size: 72px;
+  font-family: "Noto Serif KR", serif;
+}
+div.about section {
+  position: relative;
+}
+div.about section .imgGroup {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+div.about section .image {
+  width: calc(20% - 20px);
+  height: 320px;
+  background-color: #999;
+}
+div.about section .image:nth-of-type(1) {
+  direction: rtl;
+}
+div.about section .image:nth-of-type(2) {
+  width: calc(60% - 20px);
+  height: 480px;
+  background-color: #999;
+}
+div.about section .image .ovgrid {
+  width: calc((100vw - 1200px) / 2 + 100%);
+  min-width: 100%;
+  height: 100%;
+  background-color: #888;
+}
+div.about section .texts {
+  width: calc(55% - 20px);
+  position: absolute;
+  margin: auto;
+  right: 0;
+  left: 0;
+  top: 300px;
+}
+div.about section .texts p {
+  height: 80px;
+}
+div.about section .btns {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+div.about section .btns button {
+  width: 40px;
+  height: 40px;
+}
+div.about section .btns span {
+  line-height: 40px;
+}
+
+div.project section {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+div.project section header {
+  width: calc(50% - 20px);
+}
+div.project section header h2 {
+  font-weight: 500;
+  font-size: 16px;
+}
+div.project section header h2 i {
+  font-family: "Noto Serif KR";
+  font-weight: 900;
+  font-size: 120px;
+  line-height: 120px;
+}
+div.project section header h5 {
+  font-weight: 100;
+  font-size: 18px;
+}
+div.project section header p {
+  height: 80px;
+  margin-top: 20px;
+}
+div.project section header ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+div.project section header ul li {
+  width: calc(50% - 10px);
+  height: 80px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  line-height: 80px;
+  text-align: center;
+  font-family: "Noto Sans KR";
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
+}
+div.project section header ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+div.project section article {
+  width: calc(50% - 20px);
+}
+div.project section article .ovgrid {
+  height: 640px;
+  background-color: #999;
+  width: calc((100vw - 1200px) / 2 + 100%);
+  min-width: 100%;
+}
+
+div.reverse section {
+  flex-direction: row-reverse;
+}
+div.reverse section article {
+  direction: rtl;
+}
+
+div.skills header {
+  text-align: center;
+}
+div.skills section {
+  display: flex;
+  justify-content: space-around;
+}
+div.skills section article {
+  width: calc(25% - 20px);
+}
+div.skills section article:hover .progress .p60 {
+  height: 60%;
+}
+div.skills section article:hover .progress .p80 {
+  height: 80%;
+}
+div.skills section article:hover .progress .p100 {
+  height: 100%;
+}
+div.skills section article:hover .progress .p85 {
+  height: 85%;
+}
+div.skills section article .progress {
+  height: 280px;
+  background-color: #999;
+  position: relative;
+  display: flex;
+  /* flex-direction: column-reverse; */
+  /* flex-wrap: wrap-reverse; */
+  align-items: flex-end;
+  border-radius: 20px;
+  overflow: hidden;
+}
+div.skills section article .progress .bar {
+  height: 0;
+  width: 100%;
+  background-color: #f90;
+  transition: height 0.4s;
+}
+div.skills section article .progress .percent {
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #ccc;
+  border-radius: 10px;
+  padding: 0 30px;
+}
+div.skills section article .progress .percent h5 {
+  line-height: 260px;
+  font-size: 36px;
+}
+div.skills section article .progress .percent h5 i {
+  font-size: 72px;
+}
+div.skills section article .texts {
+  padding: 0 20px;
+}
+div.skills section article .texts h4 {
+  line-height: 80px;
+}
+div.skills section article .texts p {
+  height: 80px;
+}/*# sourceMappingURL=index.css.map */
