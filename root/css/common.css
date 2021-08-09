@@ -22,6 +22,13 @@ h1, h2, h3, h4, h5, p, li, dt, dd, address {
   overflow: hidden;
 }
 
+div.hdrWrap {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px 0;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+}
 div.hdrWrap header {
   width: 90%;
   max-width: 1680px;
@@ -60,6 +67,14 @@ div.hdrWrap header .bars button {
   font-size: 24px;
 }
 
+@media (max-width: 960px) {
+  div.hdrWrap header nav {
+    display: none;
+  }
+  div.hdrWrap header .bars {
+    display: block;
+  }
+}
 div.mnWrap main h3 {
   font-weight: 900;
   font-size: 72px;

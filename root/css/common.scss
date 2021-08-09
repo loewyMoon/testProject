@@ -40,6 +40,11 @@ h1,h2,h3,h4,h5,p,li,dt,dd,address{
     color: $c;
 }
 div.hdrWrap{
+    background-color: rgba(255,255,255,0.8);
+    padding: 20px 0;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
     header{
         @include cntWidth(1680);
         @include flexLayout(space-between);
@@ -62,6 +67,14 @@ div.hdrWrap{
                 border: 0;
                 font-size: 24px;
             }
+        }
+    }
+}
+@media (max-width : 960px){
+    div.hdrWrap{
+        header{
+            nav{display: none;}
+            .bars{display: block;}
         }
     }
 }
