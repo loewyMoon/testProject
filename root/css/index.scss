@@ -262,3 +262,32 @@ div.skills{
         }
     }
 }
+div.gallery{
+    header{text-align: center;}
+    section{
+        display: flex;
+        .artGroup{
+            width: 33.33%;
+        }
+        article{
+            position: relative;
+            .image{
+                height: 280px;
+                background-color: #999;
+            }
+            .texts{
+                position: absolute;
+                bottom: 40px;
+                padding: 0 20px;
+                p{
+                    height: 80px;
+                }
+            }
+        }
+        .single{
+            .image{
+                height: 560px;
+            }
+        }
+    }
+}

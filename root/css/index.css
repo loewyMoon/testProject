@@ -246,4 +246,32 @@ div.skills section article .texts h4 {
 }
 div.skills section article .texts p {
   height: 80px;
+}
+
+div.gallery header {
+  text-align: center;
+}
+div.gallery section {
+  display: flex;
+}
+div.gallery section .artGroup {
+  width: 33.33%;
+}
+div.gallery section article {
+  position: relative;
+}
+div.gallery section article .image {
+  height: 280px;
+  background-color: #999;
+}
+div.gallery section article .texts {
+  position: absolute;
+  bottom: 40px;
+  padding: 0 20px;
+}
+div.gallery section article .texts p {
+  height: 80px;
+}
+div.gallery section .single .image {
+  height: 560px;
 }/*# sourceMappingURL=index.css.map */
